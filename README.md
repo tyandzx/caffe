@@ -17,7 +17,7 @@ This file list control the exactly data read-in order during training phase. Sup
 </code></pre>
 
 2nd, define network structure in your train_val.prototxt.<br>
-Setup SampleTripletLayer to sample triplets in each mini-batch. Currently, triplets are made up by all anchor-positive pairs in the sample label and one hardest negative sample from other labels.<br>
+Setup SampleTripletLayer to sample triplets in each mini-batch. Currently, triplets are made up by all anchor-positive pairs in the same label and one hardest negative sample from other labels.<br>
 <pre><code>
   layer {
     name: "sample_triplet"
