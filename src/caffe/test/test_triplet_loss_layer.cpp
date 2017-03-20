@@ -70,7 +70,7 @@ TYPED_TEST(TripletLossLayerTest, TestGradient) {
   typedef typename TypeParam::Dtype Dtype;
   this->blob_bottom_vec_.push_back(this->blob_bottom_feature_);
   this->blob_bottom_vec_.push_back(this->blob_bottom_triplet_);
-  this->blob_bottom_vec_.push_back(this->blob_bottom_label_);
+  //this->blob_bottom_vec_.push_back(this->blob_bottom_label_);
   this->blob_top_vec_.push_back(this->blob_top_);
   LayerParameter layer_param;
   layer_param.mutable_triplet_loss_param()->set_margin(0.2);
